@@ -13,3 +13,4 @@ seaborn
 sqlalchemy
 sympy
 xgboost
+kaggle

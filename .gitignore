@@ -164,3 +164,4 @@ data/raw/*
 data/interim/*
 data/database/*
 data/clean/*
+models/*

@@ -15,3 +15,4 @@ sympy
 xgboost
 kaggle
 tensorflow
+streamlit

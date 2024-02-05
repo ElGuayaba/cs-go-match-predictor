@@ -35,7 +35,7 @@ def transform_input(team1, team2):
 
     transformed_input = scaler.transform(pd.concat([team1,team2], axis=1))
 
-    return [transformed_input, np.array([[0.0 for i in range(15)]])]
+    return [transformed_input, np.array([[np.nan for i in range(15)]])]
 
 class InputTransformer:
     player_data = pd.read_csv('../data/interim/player_data.csv')

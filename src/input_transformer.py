@@ -7,12 +7,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from pickle import load, dump
 
 # Dataset
-player_data = pd.read_csv('../data/raw/match_players.csv')
-
-player_data = player_data[['player_id', 'player_nick']].drop_duplicates()
-
-# SAVE THE DATASET
-player_data.to_csv('../data/interim/player_data.csv', index=False)
+player_data = pd.read_csv('../data/extras/player_data.csv')
 
 # Input has to be a string array of len 5
 def get_team_id_from_name(player_names_list):
@@ -38,7 +33,7 @@ def transform_input(team1, team2):
     return [transformed_input, np.array([[np.nan for i in range(15)]])]
 
 class InputTransformer:
-    player_data = pd.read_csv('../data/interim/player_data.csv')
+    player_data = player_data
 
     scaler = scaler
 

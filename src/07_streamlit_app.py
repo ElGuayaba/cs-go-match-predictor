@@ -2,12 +2,13 @@ import streamlit as st
 import pandas as pd
 from pickle import load
 from input_transformer import InputTransformer
+from keras.models import load_model
 
 st.title('Hello World')
 
 transformer = pd.read_pickle('../models/input_transformer.pkl')
 
-model = pd.read_pickle('../models/csgo_match_results_predictor-beta1.pkl')
+model = load_model('../models/csgo_match_results_predictor-beta1.h5')
 
 class_dict = {
     "0": "Tie",

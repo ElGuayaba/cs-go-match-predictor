@@ -5,6 +5,7 @@ from input_transformer import InputTransformer
 from keras.models import load_model
 
 st.title('CS GO Match predictor')
+st.write("Based on two team compositions, we'll try to predict who would win. Give it a try:")
 
 transformer = pd.read_pickle('../models/input_transformer.pkl')
 

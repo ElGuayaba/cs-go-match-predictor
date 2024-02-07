@@ -12,7 +12,6 @@ scikit-learn
 seaborn
 sqlalchemy
 sympy
-xgboost
 kaggle
 tensorflow==2.15.0
 streamlit

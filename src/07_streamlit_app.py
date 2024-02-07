@@ -4,6 +4,7 @@ from pickle import load
 from input_transformer import InputTransformer
 from keras.models import load_model
 
+st.image('../cs_go_logo.jpg')
 st.title('CS GO Match predictor')
 st.write("Based on two team compositions, we'll try to predict who would win. Give it a try:")
 

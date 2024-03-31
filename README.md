@@ -2,6 +2,8 @@
 
 A machine learning model that allows the user to predict CSGO match results using the information from two different teams.
 
+You can test-drive it here: https://cs-go-match-predictor.onrender.com/
+
 How many files does this document have?
 
 01_data_extraction  -  The extraction of dataset using Kaggle's API.
